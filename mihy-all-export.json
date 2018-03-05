@@ -1,0 +1,116 @@
+{
+  "app" : {
+    "hasFooter" : false,
+    "hasHeader" : true,
+    "isAuthApp" : false,
+    "routes" : {
+      "landing" : ""
+    }
+  },
+  "specifications" : {
+    "header" : [ {
+      "className" : "row",
+      "id" : 1,
+      "orderNo" : 1,
+      "parentId" : "",
+      "type" : "Row",
+      "uiComponent" : "materializecss"
+    }, {
+      "className" : "col s12",
+      "id" : 2,
+      "orderNo" : 1,
+      "parentId" : 1,
+      "type" : "Column",
+      "uiComponent" : "materializecss"
+    }, {
+      "className" : "card",
+      "id" : 3,
+      "orderNo" : 1,
+      "parentId" : 2,
+      "type" : "Common",
+      "uiComponent" : "materializecss"
+    }, {
+      "className" : "card-content",
+      "id" : 4,
+      "orderNo" : 1,
+      "parentId" : 3,
+      "type" : "Common",
+      "uiComponent" : "materializecss"
+    }, {
+      "className" : "card-title",
+      "defaultValue" : "Egov UI Test Demo",
+      "id" : 5,
+      "orderNo" : 1,
+      "parentId" : 4,
+      "type" : "Label",
+      "uiComponent" : "materializecss"
+    } ],
+    "landing" : [ {
+      "className" : "row",
+      "id" : 1,
+      "orderNo" : 1,
+      "parentId" : "",
+      "type" : "Row",
+      "uiComponent" : "materializecss"
+    }, {
+      "className" : "col s8 offset-s2",
+      "id" : 2,
+      "orderNo" : 1,
+      "parentId" : 1,
+      "type" : "Column",
+      "uiComponent" : "materializecss"
+    }, {
+      "className" : "card",
+      "id" : 3,
+      "orderNo" : 1,
+      "parentId" : 2,
+      "type" : "Common",
+      "uiComponent" : "materializecss"
+    }, {
+      "className" : "card-title",
+      "defaultValue" : "Demo Form",
+      "id" : 6,
+      "orderNo" : 2,
+      "parentId" : 7,
+      "type" : "Label",
+      "uiComponent" : "materializecss"
+    }, {
+      "className" : "card-content",
+      "id" : 7,
+      "orderNo" : 2,
+      "parentId" : 3,
+      "type" : "Common",
+      "uiComponent" : "materializecss"
+    }, {
+      "className" : "input-field",
+      "id" : 8,
+      "jsonPath" : "personState",
+      "label" : "Person's state",
+      "orderNo" : 2,
+      "parentId" : 7,
+      "type" : "DropDown",
+      "uiComponent" : "materializecss",
+      "values" : [ {
+        "key" : "MAH",
+        "value" : "Maharashtra"
+      }, {
+        "key" : "KER",
+        "value" : "Kerala"
+      }, {
+        "key" : "TN",
+        "value" : "Tamil Nadu"
+      } ]
+    }, {
+      "className" : "validate",
+      "id" : 9,
+      "inputType" : "text",
+      "jsonPath" : "personName",
+      "label" : "Person's name",
+      "orderNo" : 2,
+      "parentId" : 7,
+      "placeholder" : "Person's name",
+      "type" : "TextField",
+      "uiComponent" : "materializecss"
+    } ]
+  }
+}
