@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import routes from '../../routes';
-import ShowDOM from '../common/ShowDOM';
+import Flexi from '../common/Flexi';
 
 import './index.css';
 
@@ -16,11 +16,11 @@ class App extends Component {
     let {app}=this.props;
     return (
       <div className="App">
-        {app && app.hasHeader && <ShowDOM location="specifications/header" clientLocation="header"/>}
+        {app && app.hasHeader && <Flexi location="specifications/header" clientLocation="header"/>}
         {
           routes
         }
-        {app && app.hasFooter && <ShowDOM location="specifications/footer" clientLocation="footer"/>}
+        {app && app.hasFooter && <Flexi location="specifications/footer" clientLocation="footer"/>}
       </div>
     );
   }

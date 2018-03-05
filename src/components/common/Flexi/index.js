@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import ShowDOM from './ShowDOM';
+import Flexi from './Flexi';
 import * as actions from '../../../actions';
 
 const mapStateToProps=({specifications})=> {
@@ -8,4 +8,4 @@ const mapStateToProps=({specifications})=> {
   }
 }
 
-export default connect(mapStateToProps, actions)(ShowDOM);
+export default connect(mapStateToProps, actions)(Flexi);

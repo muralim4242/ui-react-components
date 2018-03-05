@@ -1,9 +1,9 @@
 import React from 'react';
-import {Switch} from 'react-router-dom';
-import Route from "./AuthRoute";
+import {Switch,Route} from 'react-router-dom';
 import Landing from '../components/content/Landing';
 import Dashboard from '../components/content/Dashboard';
 import Demo from '../components/content/Demo'
+import ChessDemo from '../components/content/ChessDemo'
 
 
 
@@ -15,7 +15,6 @@ const Main = () => {
         <Switch>
           <Route exact path={base+"/"} component={Landing} />
           <Route exact path={base+"/dashboard/:component?"} component={Dashboard} />
-          <Route exact path={base+"/specification/demo"} component={Demo} />
         </Switch>
       </main>
      )
